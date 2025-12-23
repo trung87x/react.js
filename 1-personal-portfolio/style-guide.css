@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --main-50: #e8f1fc;
+  --main-100: #d1e4fa;
+  --main-200: #a2c9f5;
+  --main-300: #74adef;
+  --main-400: #4592ea;
+  --main-500: #1777e5;
+  --main-600: #125fb7;
+  --main-700: #0e4789;
+  --main-800: #09305c;
+  --main-900: #05182e;
+
+  --font-main: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  color: var(--main-900);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography - Headings */
+.heading_display_01 {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 80px;
+}
+.heading_01 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+}
+.heading_02 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+}
+.heading_03 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+}
+.heading_04 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+.heading_05 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 64px;
+}
+
+/* Typography - Captions (Thường dùng cho nhãn, ghi chú) */
+.caption_01 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+.caption_02 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+.caption_03 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.caption_04 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+.caption_05 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+.caption_06 {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+/* Typography - Body */
+.body_xxl_400 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+.body_xxl_500 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+.body_xl_400 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+.body_xl_500 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+.body_large_400 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+.body_large_500 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+.body_regular_400 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.body_regular_500 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.body_small_400 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.body_small_500 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+.body_xs_400 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+.body_xs_500 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* --- 1. Base Button Styles --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Khoảng cách giữa icon và chữ */
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+/* --- 2. Button Variants --- */
+
+/* Primary - Màu xanh chính */
+.btn_primary {
+  background-color: var(--main-500);
+  color: #ffffff;
+}
+.btn_primary:hover {
+  background-color: var(--main-600);
+}
+
+/* Dark - Màu xanh đậm */
+.btn_dark {
+  background-color: var(--main-700);
+  color: #ffffff;
+}
+.btn_dark:hover {
+  background-color: var(--main-800);
+}
+
+/* Outline - Nút có viền */
+.btn_outline {
+  background-color: transparent;
+  border-color: var(--main-500);
+  color: var(--main-500);
+}
+.btn_outline:hover {
+  background-color: var(--main-50);
+}
+
+/* Ghost/Light - Nền nhạt */
+.btn_ghost {
+  background-color: var(--main-50);
+  color: var(--main-600);
+}
+.btn_ghost:hover {
+  background-color: var(--main-100);
+}
+
+/* --- 3. Circular Navigation & Icons --- */
+
+/* Nút điều hướng nhỏ (Mũi tên trái/phải) */
+.nav_circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--main-100);
+  background: #ffffff;
+  color: var(--main-900);
+  cursor: pointer;
+}
+.nav_circle_solid {
+  background: var(--main-500);
+  color: #ffffff;
+  border: none;
+}
+
+/* Nút Icon liên hệ */
+.icon_circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--main-500);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.icon_circle_dark {
+  background: var(--main-700);
+}
+
+/* --- 4. Large Action Circle (Request Quote) --- */
+.btn_quote_circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: var(--main-500);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column; /* Xếp mũi tên trên chữ */
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+}
+.btn_quote_circle i {
+  font-size: 24px;
+  background: #ffffff;
+  color: var(--main-500);
+  border-radius: 50%;
+  padding: 8px;
+}
+.btn_quote_circle_dark {
+  background: var(--main-700);
+}
+
+/*
+ * Icon Library: 
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<a href="#" class="btn_quote_circle">
+  <i class="ph ph-arrow-up-right"></i>
+  <span>Request Quote</span>
+</a> 
+*/
