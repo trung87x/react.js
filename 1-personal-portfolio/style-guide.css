@@ -24,137 +24,143 @@ body {
 }
 
 /* Typography - Headings */
-.heading_display_01 {
+.heading-display-01 {
   font-weight: 600;
   font-size: 80px;
   line-height: 80px;
 }
-.heading_01 {
+.heading-01 {
   font-weight: 600;
   font-size: 48px;
   line-height: 56px;
 }
-.heading_02 {
+.heading-02 {
   font-weight: 600;
   font-size: 40px;
   line-height: 48px;
 }
-.heading_03 {
+.heading-03 {
   font-weight: 600;
   font-size: 32px;
   line-height: 40px;
 }
-.heading_04 {
+.heading-04 {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
 }
-.heading_05 {
+.heading-05 {
   font-weight: 600;
   font-size: 18px;
   line-height: 64px;
 }
 
 /* Typography - Captions (Thường dùng cho nhãn, ghi chú) */
-.caption_01 {
+.caption-01 {
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
 }
-.caption_02 {
+.caption-02 {
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
 }
-.caption_03 {
+.caption-03 {
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
-.caption_04 {
+.caption-04 {
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
 }
-.caption_05 {
+.caption-05 {
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
 }
-.caption_06 {
+.caption-06 {
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 10px;
   line-height: 12px;
 }
 
 /* Typography - Body */
-.body_xxl_400 {
+.body-xxl-400 {
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
 }
-.body_xxl_500 {
+.body-xxl-500 {
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
 }
-.body_xl_400 {
+.body-xl-400 {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
 }
-.body_xl_500 {
+.body-xl-500 {
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
 }
-.body_large_400 {
+.body-large-400 {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
 }
-.body_large_500 {
+.body-large-500 {
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
 }
-.body_regular_400 {
+.body-regular-400 {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
-.body_regular_500 {
+.body-regular-500 {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 }
-.body_small_400 {
+.body-small-400 {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
-.body_small_500 {
+.body-small-500 {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
 }
-.body_xs_400 {
+.body-xs-400 {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
 }
-.body_xs_500 {
+.body-xs-500 {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
 }
 
-/* --- 1. Base Button Styles --- */
+/* Base Button Styles */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; /* Khoảng cách giữa icon và chữ */
+  gap: 10px;
   padding: 12px 24px;
   border-radius: 8px;
   font-family: var(--font-main);
@@ -165,92 +171,115 @@ body {
   border: 1px solid transparent;
   text-decoration: none;
 }
+.btn i {
+  color: inherit;
+}
 
-/* --- 2. Button Variants --- */
-
-/* Primary - Màu xanh chính */
-.btn_primary {
+/* Solid (Màu đặc) */
+.btn--primary {
   background-color: var(--main-500);
-  color: #ffffff;
+  color: #fff;
 }
-.btn_primary:hover {
+
+.btn--dark {
   background-color: var(--main-600);
+  color: #fff;
 }
 
-/* Dark - Màu xanh đậm */
-.btn_dark {
-  background-color: var(--main-700);
-  color: #ffffff;
-}
-.btn_dark:hover {
-  background-color: var(--main-800);
-}
-
-/* Outline - Nút có viền */
-.btn_outline {
-  background-color: transparent;
+/* Outline (Viền rõ) */
+.btn--outline {
   border-color: var(--main-500);
   color: var(--main-500);
-}
-.btn_outline:hover {
-  background-color: var(--main-50);
+  background: transparent;
 }
 
-/* Ghost/Light - Nền nhạt */
-.btn_ghost {
+.btn--outline-dark {
+  border-color: var(--main-600);
+  color: var(--main-600);
+  background: var(--main-50);
+}
+
+/* Soft Outline (Viền nhạt) */
+.btn--soft {
+  border-color: var(--main-100);
+  color: var(--main-500);
+  background: transparent;
+}
+
+.btn--soft-dark {
+  border-color: var(--main-500);
+  color: var(--main-500);
+  background: transparent;
+}
+
+/* Ghost/Light (Nền nhạt) */
+.btn--ghost {
   background-color: var(--main-50);
+  color: var(--main-500);
+}
+
+.btn--ghost-dark {
+  background-color: var(--main-100);
   color: var(--main-600);
 }
-.btn_ghost:hover {
-  background-color: var(--main-100);
-}
-
-/* --- 3. Circular Navigation & Icons --- */
 
 /* Nút điều hướng nhỏ (Mũi tên trái/phải) */
-.nav_circle {
+.nav-circle {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* Border & Background */
   border: 1px solid var(--main-100);
   background: #ffffff;
   color: var(--main-900);
+
+  /* Interaction */
   cursor: pointer;
 }
-.nav_circle_solid {
+.nav-circle--solid {
   background: var(--main-500);
   color: #ffffff;
-  border: none;
+  border: 1px solid transparent;
 }
 
 /* Nút Icon liên hệ */
-.icon_circle {
+.icon-circle {
+  /* Kích thước và hình dạng */
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: var(--main-500);
-  color: #ffffff;
+
+  /* Căn giữa icon bên trong */
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* Màu sắc mặc định (Primary) */
+  background: var(--main-500);
+  color: #ffffff;
+
+  /* Font và viền */
   font-size: 20px;
+  border: none;
+  cursor: pointer;
 }
-.icon_circle_dark {
+.icon-circle--dark {
   background: var(--main-700);
 }
 
-/* --- 4. Large Action Circle (Request Quote) --- */
-.btn_quote_circle {
+/* Large Action Circle (Request Quote) */
+.quote-circle {
   width: 160px;
   height: 160px;
   border-radius: 50%;
   background: var(--main-500);
   color: #ffffff;
   display: flex;
-  flex-direction: column; /* Xếp mũi tên trên chữ */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 12px;
@@ -259,22 +288,17 @@ body {
   text-decoration: none;
   border: none;
 }
-.btn_quote_circle i {
+
+.quote-circle__icon {
   font-size: 24px;
   background: #ffffff;
   color: var(--main-500);
   border-radius: 50%;
   padding: 8px;
 }
-.btn_quote_circle_dark {
+.quote-circle--dark {
   background: var(--main-700);
 }
-
-/*
- * Icon Library: 
-<script src="https://unpkg.com/@phosphor-icons/web"></script>
-<a href="#" class="btn_quote_circle">
-  <i class="ph ph-arrow-up-right"></i>
-  <span>Request Quote</span>
-</a> 
-*/
+.quote-circle--dark .quote-circle__icon {
+  color: var(--main-700);
+}
