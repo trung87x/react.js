@@ -4,18 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style-guide.css" />
+    <script>
+      // Cấu hình để hỗ trợ dark mode qua class
+      tailwind.config = { darkMode: "class" };
+    </script>
   </head>
   <style></style>
   <body>
-    <header>
-      <h1>Style guide</h1>
-      <section>
-        <h2>PRIMARY</h2>
-        <div style="display: flex">
-          <div class="background-color: var(--main-50)" ></div>
-        </div>
-      </section>
-    </header>
+    <div>
+      <h2>Điều khiển trạng thái</h2>
+      <input type="text" placeholder="Click vào tôi để thấy focus..." />
+    </div>
+    <button>Nút Tương Tác</button>
+    <hr class="my-6 border-gray-200 dark:border-gray-700" />
+
+    <button
+      onclick="document.documentElement.classList.toggle('dark')"
+      class="w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 py-2 rounded-md font-medium"
+    >
+      Toggle Dark Mode
+    </button>
   </body>
 </html>
