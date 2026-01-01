@@ -12,7 +12,8 @@
   --color-main-800: #09305c;
   --color-main-900: #05182e;
 
-  --font-main: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "InterVariable", ui-sans-serif, system-ui, sans-serif;
+  --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
 @layer base {

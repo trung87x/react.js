@@ -5,7 +5,7 @@ export const Text = ({
   children,
   ...props
 }) => {
-  const txt = "font-main text-main-900 antialiased";
+  const txt = "font-sans text-main-900 antialiased";
 
   const modeTxt = {
     // Headings (font-semibold)
